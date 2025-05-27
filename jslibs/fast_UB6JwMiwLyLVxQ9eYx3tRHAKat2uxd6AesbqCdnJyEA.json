@@ -1,0 +1,10 @@
+{
+  "accessor": [
+    "fast_xml_parser"
+  ],
+  "defs": "{\"!name\":\"LIB/fast_xml_parser\",\"fast_xml_parser\":{\"XMLBuilder\":{\"!type\":\"fn()\",\"prototype\":{\"build\":{\"!type\":\"fn()\",\"prototype\":{}},\"j2x\":{\"!type\":\"fn()\",\"prototype\":{}},\"buildAttrPairStr\":{\"!type\":\"fn()\",\"prototype\":{}},\"buildObjectNode\":{\"!type\":\"fn()\",\"prototype\":{}},\"closeTag\":{\"!type\":\"fn()\",\"prototype\":{}},\"buildTextValNode\":{\"!type\":\"fn()\",\"prototype\":{}},\"replaceEntitiesValue\":{\"!type\":\"fn()\",\"prototype\":{}}}},\"XMLParser\":{\"!type\":\"fn()\",\"prototype\":{\"parse\":{\"!type\":\"fn()\"},\"addEntity\":{\"!type\":\"fn()\"}},\"getMetaDataSymbol\":{\"!type\":\"fn()\"}},\"XMLValidator\":{\"validate\":{\"!type\":\"fn()\",\"prototype\":{}}}}}",
+  "name": "fast_xml_parser",
+  "uidString": "fast_xml_parser_https://cdn.jsdelivr.net/npm/fast-xml-parser@5.2.2/+esm",
+  "url": "https://cdn.jsdelivr.net/npm/fast-xml-parser@5.2.2/+esm",
+  "version": "5.2.2"
+}
