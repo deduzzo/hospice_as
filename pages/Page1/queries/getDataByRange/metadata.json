@@ -86,9 +86,9 @@
         "key": "formData.where.data.children[1].value"
       }
     ],
-    "executeOnLoad": true,
     "name": "getDataByRange",
     "pageId": "Page1",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }
