@@ -5,13 +5,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 11,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{assistitiHospice_tbl.selectedRow[\"CodiceUnivoco\"]}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -50,7 +53,7 @@
   "needsErrorInfo": false,
   "onTextChanged": "{{mainFunctions.onTextChanged(cf_txt);}}",
   "originalBottomRow": 11,
-  "originalTopRow": 4,
+  "originalTopRow": 5,
   "parentColumnSpace": 12.119140625,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
@@ -59,7 +62,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 12,
   "showStepArrows": false,
-  "topRow": 4,
+  "topRow": 5,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "fymp66nyjk",

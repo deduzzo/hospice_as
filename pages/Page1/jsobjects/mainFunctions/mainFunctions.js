@@ -172,5 +172,15 @@ export default {
 		}
 
 		return upperText;
+	},
+	aggiornaDatiAssistito : () => {
+		//genere_cmb.setSelectedOption(assistitiHospice_tbl.selectedRow['Genere']);
+		//console.log(assistitiHospice_tbl.selectedRow['Genere']);
+	},
+	unixToDate : (unixDate) => {
+		const date = moment(unixDate);
+		console.log(unixDate);
+		//console.log(DatePicker1.formattedDate);
+		return date.format("DD/MM/YYYY");
 	}
 }

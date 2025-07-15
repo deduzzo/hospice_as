@@ -2,15 +2,18 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 17,
   "boxShadow": "none",
-  "defaultOptionValue": "null",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( assistitiHospice_tbl.selectedRow['TitoloStudio']))(titoloStudio_cmb.options, titoloStudio_cmb.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -28,11 +31,11 @@
   "key": "ffo348beao",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Genere",
+  "labelText": "Titolo studio",
   "labelTextSize": "0.875rem",
   "labelTooltip": "",
   "labelWidth": 5,
-  "leftColumn": 20,
+  "leftColumn": 19,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -46,12 +49,12 @@
   "parentColumnSpace": 18.645751953125,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
-  "placeholderText": "Genere...",
+  "placeholderText": "Titolo...",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 27,
+  "rightColumn": 32,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"nessuno\",\n    \"value\": \"1\"\n  },\n\t{\n    \"name\": \"licenza elementare\",\n    \"value\": \"2\"\n  },\n  {\n    \"name\": \"licenza media inferiore\",\n    \"value\": \"3\"\n  },\n\t{\n    \"name\": \"diploma media superiore\",\n    \"value\": \"4\"\n  },\n\t{\n    \"name\": \"laurea\",\n    \"value\": \"5\"\n  },\n\t{\n    \"name\": \"sconosciuto\",\n    \"value\": \"6\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"nessuno\",\n    \"value\": 1\n  },\n\t{\n    \"name\": \"licenza elementare\",\n    \"value\": 2\n  },\n  {\n    \"name\": \"licenza media inferiore\",\n    \"value\": 3\n  },\n\t{\n    \"name\": \"diploma media superiore\",\n    \"value\": 4\n  },\n\t{\n    \"name\": \"laurea\",\n    \"value\": 5\n  },\n\t{\n    \"name\": \"sconosciuto\",\n    \"value\": 6\n  }\n]",
   "topRow": 11,
   "type": "SELECT_WIDGET",
   "version": 1,
