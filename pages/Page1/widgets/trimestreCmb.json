@@ -19,7 +19,11 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -40,6 +44,7 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
+  "onOptionChange": "{{getDataByRange.run()}}",
   "optionLabel": "name",
   "optionValue": "value",
   "parentColumnSpace": 20.5625,
