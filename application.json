@@ -18,7 +18,11 @@
   "icon": "flag",
   "pages": [
     {
-      "id": "Page1",
+      "id": "MainPage",
+      "isDefault": false
+    },
+    {
+      "id": "LoginPage",
       "isDefault": true
     }
   ],

@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "6875e74837a75f65b1cc20a8_0363b641-7cdf-4d29-af8c-f691a63a8791",
+  "id": "LoginPage_loginFunctions",
+  "unpublishedCollection": {
+    "name": "loginFunctions",
+    "pageId": "LoginPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultTab",
+        "value": "'Sign In'"
+      },
+      {
+        "name": "secret",
+        "value": "\"UxZ>69'[Tu<6\""
+      },
+      {
+        "name": "scope",
+        "value": "\"hospice\""
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "gitSyncId": "681e5fa9a74b143200f857c6_9713102c-6f8b-4f00-9916-f82b95d97d3e",
+  "id": "MainPage_mainFunctions",
+  "unpublishedCollection": {
+    "name": "mainFunctions",
+    "pageId": "MainPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "livelli",
+        "value": "{\n  \"100\": \"SuperAdmin\",\n  \"1\": \"Utente\",\n  \"2\": \"Admin Distretto\",\n  \"3\": \"Amministratore\"\n}"
+      },
+      {
+        "name": "firstLoadingOk",
+        "value": "false"
+      },
+      {
+        "name": "userData",
+        "value": "null"
+      },
+      {
+        "name": "distrettoCambiato",
+        "value": "false"
+      },
+      {
+        "name": "secret",
+        "value": "\"UxZ>69'[Tu<6\""
+      },
+      {
+        "name": "distrettiMap",
+        "value": "{\n  byUnique: {},\n  byId: {}\n}"
+      },
+      {
+        "name": "regione",
+        "value": "\"190\""
+      },
+      {
+        "name": "asp",
+        "value": "\"205\""
+      },
+      {
+        "name": "struttura",
+        "value": "\"830100\""
+      }
+    ]
+  }
+}
