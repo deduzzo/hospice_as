@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "681e5fa9a74b143200f857c6_9ba876f4-8a1d-4d8f-b3e9-6c633701942f",
+  "gitSyncId": "6875e74837a75f65b1cc20a8_4a03eb6d-d219-4b52-bec5-e34916d904b9",
   "id": "MainPage_mainFunctions.generaT2",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -9,7 +9,7 @@
       "jsArguments": [
         {
           "name": "filename",
-          "value": "{{mainFunctions.regione + mainFunctions.asp + \"_\" + mainFunctions.struttura + \"_\" + annoCmb.selectedOptionValue.toString() + \"_0\" + trimestreCmb.selectedOptionLabel.substr(0,1) + \"_ATT_al_\" + \n\t\t\t\tmoment().format(\"YYYY_MM_DD\")}}"
+          "value": "{{mainFunctions.regione + mainFunctions.asp + \"_\" + mainFunctions.struttura + \"_\" + annoCmb.selectedOptionValue.toString() + \"_0\" + trimestreCmb.selectedOptionLabel.substr(0,1) + \"_ATT_al_\" + \n\t\t\t\t\t moment().format(\"YYYY_MM_DD\")}}"
         }
       ],
       "paginationType": "NONE",

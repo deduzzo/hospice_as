@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "681e5fa9a74b143200f857c6_be4f42e3-36e5-40ac-ad8c-56ec2f2dea0d",
-  "id": "MainPage_mainFunctions.generaT1",
+  "gitSyncId": "6875e74837a75f65b1cc20a8_dc7793f8-7bd5-44d5-a300-587ec7958540",
+  "id": "MainPage_mainFunctions.doLogout",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -8,8 +8,12 @@
       "encodeParamsToggle": true,
       "jsArguments": [
         {
-          "name": "filename",
-          "value": "{{mainFunctions.regione + mainFunctions.asp + \"_\" + mainFunctions.struttura + \"_\" + annoCmb.selectedOptionValue.toString() + \"_0\" + trimestreCmb.selectedOptionLabel.substr(0,1) + \"_PIC_al_\" + \n\t\t\t\t\t moment().format(\"YYYY_MM_DD\")}}"
+          "name": "msg",
+          "value": "Logout effettuato"
+        },
+        {
+          "name": "type",
+          "value": "info"
         }
       ],
       "paginationType": "NONE",
@@ -27,8 +31,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "mainFunctions.generaT1",
-    "name": "generaT1",
+    "fullyQualifiedName": "mainFunctions.doLogout",
+    "name": "doLogout",
     "pageId": "MainPage",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

@@ -2,18 +2,15 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 15,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  moment().get(\"year\")))(annoCmb.options, annoCmb.serverSideFiltering) }}",
+  "defaultOptionValue": "ultimo_anno",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -22,46 +19,41 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "thc8f34p10",
+  "key": "2a759mj2tp",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Anno",
+  "labelText": "Label",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 27,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 6,
-  "mobileLeftColumn": 41,
-  "mobileRightColumn": 61,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onOptionChange": "{{getDataByRange.run()}}",
   "optionLabel": "name",
-  "optionValue": "value",
-  "parentColumnSpace": 20.5625,
-  "parentId": "aioxrimrlu",
+  "optionValue": "code",
+  "parentColumnSpace": 20.25,
+  "parentId": "0",
   "parentRowSpace": 10,
-  "placeholderText": "Anno..",
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 42,
+  "rightColumn": 15,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"2024\",\n    \"value\": 2024\n  },\n  {\n    \"name\": \"2025\",\n    \"value\": 2025\n  }\n]",
-  "topRow": 5,
+  "sourceData": "[\n  {\n    \"name\": \"Ultimo Anno\",\n    \"code\": \"ultimo_anno\"\n  },\n  {\n    \"name\": \"Ultimo Trimestre\",\n    \"code\": \"ultimo_trimestre\"\n  },\n  {\n    \"name\": \"Altro\",\n    \"code\": \"altro\"\n  }\n]",
+  "topRow": 8,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "12ofrlaaqa",
-  "widgetName": "annoCmb"
+  "widgetId": "6g86wjlx27",
+  "widgetName": "Select1"
 }

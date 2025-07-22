@@ -12,6 +12,14 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -20,7 +28,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{!trimestreCmb.selectedOptionValue}}",
   "isLoading": false,
   "isVisible": true,
   "key": "hs5ztr6dck",
@@ -32,8 +40,8 @@
   "mobileTopRow": 15,
   "needsErrorInfo": false,
   "onClick": "{{mainFunctions.generaT1();}}",
-  "originalBottomRow": 31,
-  "originalTopRow": 27,
+  "originalBottomRow": 29,
+  "originalTopRow": 25,
   "parentColumnSpace": 20.5625,
   "parentId": "aioxrimrlu",
   "parentRowSpace": 10,

@@ -3,70 +3,55 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 23,
   "boxShadow": "none",
-  "defaultText": "{{assistitiHospice_tbl.selectedRow[\"Cittadinanza\"]}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
-  "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "MULTI_LINE_TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isSpellCheck": false,
   "isVisible": true,
-  "key": "wz695rfkdw",
-  "label": "Cittadinanza",
+  "key": "237mql0wnk",
+  "label": "Filtra solo questi codici fiscali (separati da virgola)",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 1,
-  "maxChars": "2",
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 8,
+  "mobileBottomRow": 20,
   "mobileLeftColumn": 1,
   "mobileRightColumn": 21,
-  "mobileTopRow": 1,
+  "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onTextChanged": "{{mainFunctions.onTextChanged(cittadinanza_txt);}}",
-  "originalBottomRow": 17,
-  "originalTopRow": 11,
-  "parentColumnSpace": 12.119140625,
-  "parentId": "vl0phq9jwq",
+  "originalBottomRow": 25,
+  "originalTopRow": 13,
+  "parentColumnSpace": 9.59375,
+  "parentId": "aioxrimrlu",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 6,
+  "rightColumn": 63,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 11,
+  "topRow": 13,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "5m57f7qcrd",
-  "widgetName": "cittadinanza_txt"
+  "widgetId": "z6pc9fmkkn",
+  "widgetName": "filtroCf_txt"
 }

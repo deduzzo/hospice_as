@@ -51,21 +51,23 @@
           "data": "1"
         },
         "where": {
-          "data": {
+          "componentData": {
             "children": [
               {
                 "condition": "GTE",
                 "key": "DataDimissione",
-                "value": "{{ annoCmb.selectedOptionValue.toString() + trimestreCmb.selectedOptionValue.split(\"|\")[0]}}"
+                "value": "{{ this.params.from}}"
               },
               {
                 "condition": "LTE",
                 "key": "DataDimissione",
-                "value": "{{ annoCmb.selectedOptionValue.toString() + trimestreCmb.selectedOptionValue.split(\"|\")[1]}}"
+                "value": "{{ this.params.to}}"
               }
             ],
             "condition": "AND"
-          }
+          },
+          "data": "{\n  \"condition\": \"AND\",\n  \"children\": [\n    {\n      \"condition\": \"GTE\",\n      \"key\": \"DataDimissione\",\n      \"value\": \"{{ this.params.from }}\"\n    }\n    {{ this.params.to ? `,{\n      \"condition\": \"LTE\",\n      \"key\": \"DataDimissione\",\n      \"value\": \"${this.params.to}\"\n    }` : \"\" }}\n  ]\n}",
+          "viewType": "json"
         }
       },
       "paginationType": "NONE",
@@ -80,10 +82,7 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.where.data.children[0].value"
-      },
-      {
-        "key": "formData.where.data.children[1].value"
+        "key": "formData.where.data"
       }
     ],
     "name": "getDataByRange",

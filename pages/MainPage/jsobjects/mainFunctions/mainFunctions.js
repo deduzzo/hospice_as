@@ -22,6 +22,7 @@ export default {
 
 			await this.getDistrettiMap();          // 1
 			await this.verifyTokenExpires();       // 2
+			await this.aggiornaDatiAssistiti();
 		} catch (err) {
 			console.error("Errore in initLoad:", err);
 			showAlert("Si è verificato un errore nel caricamento iniziale", "error");
@@ -29,49 +30,61 @@ export default {
 			this.firstLoadingOk = true;
 		}
 	},
+	async aggiornaDatiAssistiti (from = moment().subtract(1, 'years').format("YYYY-MM-DD") , to = null) {
+		// from: {{ annoCmb.selectedOptionValue.toString() + trimestreCmb.selectedOptionValue.split("|")[0]}}
+		// to: {{ annoCmb.selectedOptionValue.toString() + trimestreCmb.selectedOptionValue.split("|")[1]}}
+		let params = {from: from};
+		if (to)
+			params.to = to;
+		await getDataByRange.run(params);
+	},
 
-	generaT1(filename = this.regione + this.asp + "_" + this.struttura + "_" + annoCmb.selectedOptionValue.toString() + "_0" + trimestreCmb.selectedOptionLabel.substr(0,1) + "_PIC_al_" + 
+	async generaT1 (filename = this.regione + this.asp + "_" + this.struttura + "_" + annoCmb.selectedOptionValue.toString() + "_0" + trimestreCmb.selectedOptionLabel.substr(0,1) + "_PIC_al_" + 
 					 moment().format("YYYY_MM_DD")) {
 		try {
+			const filtriCf = filtroCf_txt.text ? filtroCf_txt.text.split(",") : null;
 			// Verifica che fast_xml_parser sia disponibile
 			if (typeof fast_xml_parser === 'undefined' || typeof fast_xml_parser.XMLBuilder !== 'function') {
 				return "Errore: fast_xml_parser non è disponibile o non contiene XMLBuilder";
 			}
-
+await getDataByRange.clear();
+			await getDataByRange.run(this.getFromToAnnoTrimestre(trimestreCmb.selectedOptionValue,annoCmb.selectedOptionValue));
 			let Assistenza = [];
 			for (let riga of getDataByRange.data) {
-				const dataRicovero = moment(riga['DataRicovero']).format("YYYY-MM-DD");
-				let temp = {
-					Trasmissione: {
-						"@_tipo": "I"
-					},
-					Assistito: {
-						DatiAnagrafici: {
-							CUNI: riga['CodiceUnivoco'],
-							validitaCI: "0",
-							tipologiaCI: "0",
-							AnnoNascita: riga["AnnoNascita"],
-							Genere: riga['Genere'],
-							Cittadinanza: riga['Cittadinanza'],
-							TitoloStudio: riga['TitoloStudio'],
-							Residenza: {
-								Regione: riga['RegioneR'],
-								ASL: riga['ASLR'],
-								Comune: this.removeChar(riga['Comune'],"_"),
-								StatoEstero: riga['StatoEstero']
+				if (!filtriCf || (filtriCf.includes(riga['CodiceUnivoco'].toUpperCase()))) {
+					const dataRicovero = moment(riga['DataRicovero']).format("YYYY-MM-DD");
+					let temp = {
+						Trasmissione: {
+							"@_tipo": "I"
+						},
+						Assistito: {
+							DatiAnagrafici: {
+								CUNI: riga['CodiceUnivoco'],
+								validitaCI: "0",
+								tipologiaCI: "0",
+								AnnoNascita: riga["AnnoNascita"],
+								Genere: riga['Genere'],
+								Cittadinanza: riga['Cittadinanza'],
+								TitoloStudio: riga['TitoloStudio'],
+								Residenza: {
+									Regione: riga['RegioneR'],
+									ASL: riga['ASLR'],
+									Comune: this.removeChar(riga['Comune'],"_"),
+									StatoEstero: riga['StatoEstero']
+								},
 							},
 						},
-					},
-					PresaInCarico: {
-						Regione: riga['RegioneR'].toString(),
-						ASL: riga['ASLR'].toString(),
-						StrutturaErogatrice: riga['StrutturaErogatrice'].toString(),
-						DataRicovero: dataRicovero.toString(),
-						Id_Rec: riga['RegioneR'].toString() + riga['ASLR'].toString() + riga['StrutturaErogatrice'].toString() + dataRicovero.toString() + riga['CodiceUnivoco'],
-					}
+						PresaInCarico: {
+							Regione: riga['RegioneR'].toString(),
+							ASL: riga['ASLR'].toString(),
+							StrutturaErogatrice: riga['StrutturaErogatrice'].toString(),
+							DataRicovero: dataRicovero.toString(),
+							Id_Rec: riga['RegioneR'].toString() + riga['ASLR'].toString() + riga['StrutturaErogatrice'].toString() + dataRicovero.toString() + riga['CodiceUnivoco'],
+						}
 
-				};
-				Assistenza.push(temp);
+					};
+					Assistenza.push(temp);
+				}
 			}
 
 			// Definisci l'oggetto XML direttamente con l'array di assistenze
@@ -101,17 +114,20 @@ export default {
 			return "Errore: " + error.message;
 		}
 	},
-	generaT2(filename = this.regione + this.asp + "_" + this.struttura + "_" + annoCmb.selectedOptionValue.toString() + "_0" + trimestreCmb.selectedOptionLabel.substr(0,1) + "_ATT_al_" + 
+	async generaT2(filename = this.regione + this.asp + "_" + this.struttura + "_" + annoCmb.selectedOptionValue.toString() + "_0" + trimestreCmb.selectedOptionLabel.substr(0,1) + "_ATT_al_" + 
 					 moment().format("YYYY_MM_DD")) {
 		try {
+			const filtriCf = filtroCf_txt.text ? filtroCf_txt.text.split(",") : null;
 			// Verifica che fast_xml_parser sia disponibile
 			if (typeof fast_xml_parser === 'undefined' || typeof fast_xml_parser.XMLBuilder !== 'function') {
 				return "Errore: fast_xml_parser non è disponibile o non contiene XMLBuilder";
 			}
 
 			let Assistenza = [];
-			getDataByRange.clear();
+			await getDataByRange.clear();
+await getDataByRange.run(this.getFromToAnnoTrimestre(trimestreCmb.selectedOptionValue,annoCmb.selectedOptionValue));
 			for (let riga of getDataByRange.data) {
+				if (!filtriCf || (filtriCf.includes(riga['CodiceUnivoco'].toUpperCase()))) {
 				const dataRicovero = moment(riga['DataRicovero']).format("YYYY-MM-DD");
 				const dataRichiestaRicovero =moment(riga['DataRichiestaRicovero']).format("YYYY-MM-DD");
 				const dataRicezioneRichiestaRicovero = moment(riga['DataRicezioneRichiestaRicovero']).format("YYYY-MM-DD");
@@ -151,6 +167,7 @@ export default {
 					}
 				};
 				Assistenza.push(temp);
+			}
 			}
 
 			// Definisci l'oggetto XML direttamente con l'array di assistenze
@@ -254,6 +271,12 @@ export default {
 		}
 		return { expired };
 	},
+	
+		doLogout: (msg = "Logout effettuato", type = "info") => {
+		storeValue("token", null);
+		storeValue("message", { msg, type });
+		navigateTo("LoginPage");
+	},
 
 	createToken: user => jsonwebtoken.sign(user, this.secret, { expiresIn: 60 * 60 }),
 	/* =======================
@@ -277,4 +300,15 @@ export default {
 			this.distrettiMap.byId[d.old_code] = d;
 		});
 	},
+	getFromToAnnoTrimestre(trimestre, anno = moment().year) {
+		  const trim = [
+				"-01-01|-03-31",
+				"-04-01|-06-30",
+				"-07-01|-10-31",
+				"-11-01|-12-31"];
+		return {
+			from: anno+trim[trimestre-1].split("|")[0],
+			to: anno + trim[trimestre-1].split("|")[1]
+		};	
+	}
 }
