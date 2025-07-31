@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{ mainFunctions.unixToDate(assistitiHospice_tbl.selectedRow[\"DataRicovero\"]) }}",
+  "defaultDate": "{{ mainFunctions.unixToDate(assistitiHospice_tbl.selectedRow[\"DataRichiestaRicovero\"]) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -32,7 +32,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "onz4gh2zjn",
-  "label": "Label",
+  "label": "Data Rich. Ricovero",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelTextSize": "0.875rem",
@@ -48,19 +48,19 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 21,
   "needsErrorInfo": false,
-  "originalBottomRow": 27,
-  "originalTopRow": 21,
+  "originalBottomRow": 34,
+  "originalTopRow": 28,
   "parentColumnSpace": 18.98828125,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 15,
+  "rightColumn": 14,
   "shortcuts": false,
   "timePrecision": "None",
   "topRow": 21,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "whnb2c9nou",
-  "widgetName": "DatePicker1"
+  "widgetId": "u6cfunhrml",
+  "widgetName": "data_richiesta_ricovero_cmb"
 }

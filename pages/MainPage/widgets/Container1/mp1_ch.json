@@ -1,0 +1,55 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 42,
+  "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni1\"]}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "h5vf0mpmn6",
+  "label": "Controllo Dolore",
+  "labelPosition": "Left",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 38,
+  "needsErrorInfo": false,
+  "originalBottomRow": 43,
+  "originalTopRow": 38,
+  "parentColumnSpace": 18.98828125,
+  "parentId": "vl0phq9jwq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 9,
+  "topRow": 38,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "hwzbq5sllv",
+  "widgetName": "mp1_ch"
+}

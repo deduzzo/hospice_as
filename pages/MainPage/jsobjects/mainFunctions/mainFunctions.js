@@ -16,10 +16,13 @@ export default {
 	regione: "190",
 	asp: "205",
 	struttura: "830100",
+	dataRange: {
+		from:  moment().subtract(1, 'years').format("YYYY-MM-DD"),
+		to: moment().format("YYYY-MM-DD"),
+	},
 	async initLoad() {
 		this.firstLoadingOk = false;
 		try {
-
 			await this.getDistrettiMap();          // 1
 			await this.verifyTokenExpires();       // 2
 			await this.aggiornaDatiAssistiti();
