@@ -4,7 +4,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 41,
-  "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni1\"]}}",
+  "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni2\"]}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -28,9 +28,9 @@
   "isRequired": false,
   "isVisible": true,
   "key": "h5vf0mpmn6",
-  "label": "1: dolore",
+  "label": "2: dispnea",
   "labelPosition": "Right",
-  "leftColumn": 1,
+  "leftColumn": 6,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -39,17 +39,17 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "originalBottomRow": 64,
-  "originalTopRow": 38,
+  "originalBottomRow": 41,
+  "originalTopRow": 37,
   "parentColumnSpace": 18.98828125,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 6,
+  "rightColumn": 12,
   "topRow": 37,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
-  "widgetId": "hwzbq5sllv",
-  "widgetName": "mp1_ch"
+  "widgetId": "gae5f0jnax",
+  "widgetName": "mp2_ch"
 }

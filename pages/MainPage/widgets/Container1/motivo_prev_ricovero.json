@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 27,
+  "bottomRow": 26,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( assistitiHospice_tbl.selectedRow['MotivoPrevalenteRicovero']))(titoloStudio_cmbCopy.options, titoloStudio_cmbCopy.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( assistitiHospice_tbl.selectedRow['MotivoPrevalenteRicovero']))(motivo_prev_ricovero.options, motivo_prev_ricovero.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -46,6 +46,8 @@
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "value",
+  "originalBottomRow": 27,
+  "originalTopRow": 21,
   "parentColumnSpace": 18.645751953125,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
@@ -55,7 +57,7 @@
   "rightColumn": 42,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"Clinico\",\n    \"value\": 1\n  },\n\t{\n    \"name\": \"NON Clinico\",\n    \"value\": 2\n  }\n]",
-  "topRow": 21,
+  "topRow": 20,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "9inac55686",

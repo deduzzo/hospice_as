@@ -229,7 +229,8 @@ await getDataByRange.run(this.getFromToAnnoTrimestre(trimestreCmb.selectedOption
 		const date = moment(unixDate);
 		console.log(unixDate);
 		//console.log(DatePicker1.formattedDate);
-		return date.format("DD/MM/YYYY");
+		console.log(date.format("YYYY"));
+		return date.format("YYYY-MM-DD");
 	},
 	/* =======================
 	   TOKEN / SICUREZZA
