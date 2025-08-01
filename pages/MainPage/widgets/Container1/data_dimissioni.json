@@ -1,11 +1,13 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
+  "bottomRow": 54,
   "boxShadow": "none",
-  "defaultText": "{{ mainFunctions.removeChar( assistitiHospice_tbl.selectedRow[\"Comune\"], \"_\")}}",
+  "closeOnSelection": true,
+  "dateFormat": "DD/MM/YYYY",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{ mainFunctions.unixToDate(assistitiHospice_tbl.selectedRow[\"DataDimissione\"]) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,59 +16,51 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "onTextChanged"
+      "key": "defaultDate"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
-  "iconAlign": "left",
-  "inputType": "TEXT",
+  "dynamicTriggerPathList": [],
+  "firstDayOfWeek": "1",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isSpellCheck": false,
   "isVisible": true,
-  "key": "wz695rfkdw",
-  "label": "Struttura Erog.",
+  "key": "onz4gh2zjn",
+  "label": "Data Rich. Ricovero",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 1,
-  "maxChars": "2",
+  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 8,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 21,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 21,
   "needsErrorInfo": false,
-  "onTextChanged": "{{mainFunctions.onTextChanged(struttura_erog_txt);}}",
   "originalBottomRow": 27,
   "originalTopRow": 21,
-  "parentColumnSpace": 12.119140625,
+  "parentColumnSpace": 18.98828125,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 7,
-  "shouldAllowAutofill": false,
-  "showStepArrows": false,
-  "topRow": 20,
-  "type": "INPUT_WIDGET_V2",
+  "rightColumn": 8,
+  "shortcuts": false,
+  "timePrecision": "None",
+  "topRow": 48,
+  "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "5b6huu9x1p",
-  "widgetName": "struttura_erog_txt"
+  "widgetId": "vm4o77lrxe",
+  "widgetName": "data_dimissioni"
 }

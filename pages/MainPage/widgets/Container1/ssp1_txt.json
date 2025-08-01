@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
+  "bottomRow": 36,
   "boxShadow": "none",
   "defaultText": "{{ mainFunctions.removeChar( assistitiHospice_tbl.selectedRow[\"SSP1\"], \"_\")}}",
   "dynamicBindingPathList": [
@@ -65,7 +65,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "tooltip": "Segno/sintomo\nclinico primario\n- SSP1",
-  "topRow": 31,
+  "topRow": 30,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "4m2zrswfq8",

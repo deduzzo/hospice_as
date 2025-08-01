@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
+  "bottomRow": 36,
   "boxShadow": "none",
   "defaultText": "{{ assistitiHospice_tbl.selectedRow[\"PatologiaResponsabile\"]}}",
   "dynamicBindingPathList": [
@@ -64,7 +64,7 @@
   "rightColumn": 6,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 31,
+  "topRow": 30,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "554sj4c5w2",

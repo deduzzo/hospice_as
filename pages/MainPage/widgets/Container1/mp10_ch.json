@@ -3,8 +3,8 @@
   "alignWidget": "LEFT",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 40,
-  "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni4\"]}}",
+  "bottomRow": 44,
+  "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni10\"]}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -28,9 +28,9 @@
   "isRequired": false,
   "isVisible": true,
   "key": "h5vf0mpmn6",
-  "label": "4: sintomi psicocomportamentali",
+  "label": "9: accudimento del paziente",
   "labelPosition": "Right",
-  "leftColumn": 22,
+  "leftColumn": 42,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -39,17 +39,17 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "originalBottomRow": 41,
-  "originalTopRow": 37,
+  "originalBottomRow": 49,
+  "originalTopRow": 41,
   "parentColumnSpace": 18.98828125,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 35,
-  "topRow": 36,
+  "rightColumn": 54,
+  "topRow": 40,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
-  "widgetId": "g42e97iofl",
-  "widgetName": "mp4_ch"
+  "widgetId": "cxbicddb5g",
+  "widgetName": "mp10_ch"
 }

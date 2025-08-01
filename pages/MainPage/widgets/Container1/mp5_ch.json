@@ -4,7 +4,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 40,
-  "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni4\"]}}",
+  "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni5\"]}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -28,9 +28,9 @@
   "isRequired": false,
   "isVisible": true,
   "key": "h5vf0mpmn6",
-  "label": "4: sintomi psicocomportamentali",
+  "label": "5: medicazioni complesse",
   "labelPosition": "Right",
-  "leftColumn": 22,
+  "leftColumn": 35,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -46,10 +46,10 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 35,
+  "rightColumn": 46,
   "topRow": 36,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
-  "widgetId": "g42e97iofl",
-  "widgetName": "mp4_ch"
+  "widgetId": "c3wxml296b",
+  "widgetName": "mp5_ch"
 }

@@ -4,7 +4,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 40,
-  "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni4\"]}}",
+  "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni6\"]}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -28,9 +28,9 @@
   "isRequired": false,
   "isVisible": true,
   "key": "h5vf0mpmn6",
-  "label": "4: sintomi psicocomportamentali",
+  "label": "6: sedazione terminale/palliativa",
   "labelPosition": "Right",
-  "leftColumn": 22,
+  "leftColumn": 46,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -39,17 +39,17 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "originalBottomRow": 41,
+  "originalBottomRow": 42,
   "originalTopRow": 37,
   "parentColumnSpace": 18.98828125,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 35,
+  "rightColumn": 59,
   "topRow": 36,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
-  "widgetId": "g42e97iofl",
-  "widgetName": "mp4_ch"
+  "widgetId": "mvug22dp2j",
+  "widgetName": "mp6_ch"
 }

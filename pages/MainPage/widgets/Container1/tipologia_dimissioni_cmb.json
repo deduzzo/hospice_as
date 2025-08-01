@@ -1,0 +1,65 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 54,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( assistitiHospice_tbl.selectedRow['Modalità']))(tipologia_dimissioni_cmb.options, tipologia_dimissioni_cmb.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ffo348beao",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Modalità di dimissioni",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "",
+  "labelWidth": 5,
+  "leftColumn": 8,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "value",
+  "originalBottomRow": 27,
+  "originalTopRow": 21,
+  "parentColumnSpace": 18.645751953125,
+  "parentId": "vl0phq9jwq",
+  "parentRowSpace": 10,
+  "placeholderText": "Modalità dimissioni",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 23,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"dimissione ordinaria al domicilio dell'assistito\",\n    \"value\": 1\n  },\n\t{\n    \"name\": \"dimissione al domicilio dell'assistito con assistenza domiciliare\",\n    \"value\": 2\n  },\n  {\n    \"name\": \"dimissione dell'assistito con cure palliative domiciliari\",\n    \"value\": 3\n  },\n\t{\n    \"name\": \"dimissione presso strutture residenziali extraospedaliere\",\n    \"value\": 4\n  },\n\t{\n    \"name\": \"trasferito ad ospedale\",\n    \"value\": 5\n  },\n\t{\n    \"name\": \"deceduto\",\n    \"value\": 6\n  },\n\t\t{\n    \"name\": \"Altro\",\n    \"value\": 9\n  }\n]",
+  "topRow": 48,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "58yvlcojo9",
+  "widgetName": "tipologia_dimissioni_cmb"
+}
