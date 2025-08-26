@@ -20,12 +20,18 @@
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "onTextChanged"
+      "key": "onBlur"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
+    },
+    {
+      "key": "onBlur"
     }
   ],
   "errorMessage": "Codice fiscale non valido",
@@ -52,7 +58,9 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onTextChanged": "{{mainFunctions.onTextChanged(cf_txt);}}",
+  "onBlur": "{{mainFunctions.onTextChanged(cf_txt)}}",
+  "onFocus": "",
+  "onTextChanged": "",
   "originalBottomRow": 10,
   "originalTopRow": 4,
   "parentColumnSpace": 12.119140625,

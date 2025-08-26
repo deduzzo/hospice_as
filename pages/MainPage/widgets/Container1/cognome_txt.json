@@ -20,12 +20,15 @@
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "onTextChanged"
+      "key": "onBlur"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
     }
   ],
   "iconAlign": "left",
@@ -51,7 +54,8 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onTextChanged": "{{mainFunctions.onTextChanged(cognome_txt);}}",
+  "onBlur": "{{mainFunctions.onTextChanged(cognome_txt)}}",
+  "onTextChanged": "",
   "parentColumnSpace": 12.119140625,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
