@@ -19,7 +19,11 @@
       "key": "isDisabled"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconAlign": "left",
   "iconName": "delete",
   "isDefaultClickDisabled": true,
@@ -34,6 +38,9 @@
   "mobileRightColumn": 56,
   "mobileTopRow": 49,
   "needsErrorInfo": false,
+  "onClick": "{{showModal(eliminazioneModal.name).then(() => {});}}",
+  "originalBottomRow": 53,
+  "originalTopRow": 49,
   "parentColumnSpace": 18.98828125,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
