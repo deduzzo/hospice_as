@@ -7,16 +7,13 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{mainFunctions.dataRange.to}}",
+  "defaultDate": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -32,7 +29,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "3vrdw7c815",
-  "label": "Da",
+  "label": "A",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelTextSize": "0.875rem",

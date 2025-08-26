@@ -42,8 +42,8 @@
         "sortBy": {
           "data": [
             {
-              "column": "DataDimissione",
-              "order": "Ascending"
+              "column": "ID",
+              "order": "Descending"
             }
           ]
         },

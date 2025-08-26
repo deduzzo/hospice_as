@@ -28,7 +28,7 @@
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isSpellCheck": false,
   "isVisible": true,
   "key": "wz695rfkdw",
@@ -51,6 +51,7 @@
   "parentColumnSpace": 12.119140625,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
+  "regex": "^(19|20)\\d{2}$",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
@@ -61,5 +62,5 @@
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "2rgp6x5zwj",
-  "widgetName": "cognome_txtCopy"
+  "widgetName": "annoNascita_txt"
 }

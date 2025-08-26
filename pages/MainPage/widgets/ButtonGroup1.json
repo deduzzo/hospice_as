@@ -23,6 +23,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
     }
   ],
   "groupButtons": {
@@ -49,8 +52,9 @@
       "index": 1,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Add",
+      "label": "Nuovo Paziente",
       "menuItems": {},
+      "onClick": "{{mainFunctions.newRow();}}",
       "placement": "CENTER",
       "widgetId": ""
     },

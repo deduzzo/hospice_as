@@ -6,16 +6,7 @@
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [
-        {
-          "name": "from",
-          "value": "{{moment().subtract(1, 'years').format(\"YYYY-MM-DD\")}}"
-        },
-        {
-          "name": "to",
-          "value": "{{null}}"
-        }
-      ],
+      "jsArguments": [],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },

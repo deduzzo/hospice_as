@@ -46,6 +46,10 @@
       {
         "name": "dataRange",
         "value": "{\n  from: moment().subtract(1, 'years').format(\"YYYY-MM-DD\"),\n  to: moment().format(\"YYYY-MM-DD\")\n}"
+      },
+      {
+        "name": "addingNewRow",
+        "value": "false"
       }
     ]
   }
