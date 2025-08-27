@@ -21,11 +21,17 @@
   "dynamicPropertyPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
     }
   ],
   "iconAlign": "left",
@@ -52,7 +58,8 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onTextChanged": "{{mainFunctions.onTextChanged(cittadinanza_txt);}}",
+  "onBlur": "{{mainFunctions.onTextChanged(cittadinanza_txt)}}",
+  "onTextChanged": "",
   "originalBottomRow": 16,
   "originalTopRow": 10,
   "parentColumnSpace": 12.119140625,

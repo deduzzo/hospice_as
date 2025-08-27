@@ -20,16 +20,14 @@ export default {
 		from:  moment().subtract(1, 'years').format("YYYY-MM-DD"),
 		to: moment().format("YYYY-MM-DD"),
 	},
-	addingNewRow: false,
 	newRow: () => {
-		this.addingNewRow = true;
 		assistitiHospice_tbl.setSelectedRowIndex(null);
 		struttura_erog_txt.setValue("830100");
 		tariffa_giornaliera_txt.setValue("250");
 	},
 	verificaOAggiungiRiga: async () => {
 		if (!this.verificaCampiObbligatori()) {
-			if (assistitiHospice_tbl.selectedRow) {
+			if (assistitiHospice_tbl.selectedRowIndex) {
 				// AGGIORNA
 				await this.modificaRiga();
 				showAlert("Mofifica effettuata con successo", "info");

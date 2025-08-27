@@ -21,11 +21,17 @@
   "dynamicPropertyPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
     }
   ],
   "iconAlign": "left",
@@ -52,7 +58,8 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onTextChanged": "{{mainFunctions.onTextChanged(statoestero_txt);}}",
+  "onBlur": "{{mainFunctions.onTextChanged(statoestero_txt)}}",
+  "onTextChanged": "",
   "originalBottomRow": 17,
   "originalTopRow": 11,
   "parentColumnSpace": 12.119140625,

@@ -29,12 +29,15 @@
     },
     {
       "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.menuItems.menuItem2ip8cjnofh.onClick"
     }
   ],
   "groupButtons": {
     "groupButton1": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-      "buttonType": "SIMPLE",
+      "buttonType": "MENU",
       "disabledWhenInvalid": false,
       "iconName": "heart",
       "id": "groupButton1",
@@ -42,7 +45,21 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "Benvenuto {{mainFunctions.userData.username}}",
-      "menuItems": {},
+      "menuItems": {
+        "menuItem2ip8cjnofh": {
+          "backgroundColor": "#e15615",
+          "iconColor": "#fef9c3",
+          "iconName": "log-out",
+          "id": "menuItem2ip8cjnofh",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Logout",
+          "onClick": "{{mainFunctions.doLogout();}}",
+          "textColor": "#fef9c3",
+          "widgetId": "rm2brmys0s"
+        }
+      },
       "placement": "CENTER",
       "widgetId": ""
     },
