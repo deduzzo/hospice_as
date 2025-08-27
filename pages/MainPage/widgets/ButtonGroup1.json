@@ -18,6 +18,9 @@
     },
     {
       "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton1.label"
     }
   ],
   "dynamicTriggerPathList": [
@@ -38,7 +41,7 @@
       "index": 0,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Favorite",
+      "label": "Benvenuto {{mainFunctions.userData.username}}",
       "menuItems": {},
       "placement": "CENTER",
       "widgetId": ""
