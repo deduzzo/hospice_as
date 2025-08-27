@@ -20,14 +20,18 @@ export default {
 		from:  moment().subtract(1, 'years').format("YYYY-MM-DD"),
 		to: moment().format("YYYY-MM-DD"),
 	},
-	newRow: () => {
-		assistitiHospice_tbl.setSelectedRowIndex(null);
+	newRow: async () => {
+		await assistitiHospice_tbl.setSelectedRowIndex(null);
+		regioneResidenza_txt.setValue("190");
+		aslResidenza_txt.setValue("205");
 		struttura_erog_txt.setValue("830100");
 		tariffa_giornaliera_txt.setValue("250");
+		cittadinanza_txt.setValue("IT");
+		statoestero_txt.setValue("IT");
 	},
 	verificaOAggiungiRiga: async () => {
 		if (!this.verificaCampiObbligatori()) {
-			if (assistitiHospice_tbl.selectedRowIndex) {
+			if (assistitiHospice_tbl.selectedRowIndex !== null) {
 				// AGGIORNA
 				await this.modificaRiga();
 				showAlert("Mofifica effettuata con successo", "info");

@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 26,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( assistitiHospice_tbl.selectedRow['TitoloStudio']))(tipoStrutturaProv_cmb.options, tipoStrutturaProv_cmb.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( assistitiHospice_tbl.selectedRow['TipoStrutturaProvenienza']))(tipoStrutturaProv_cmb.options, tipoStrutturaProv_cmb.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

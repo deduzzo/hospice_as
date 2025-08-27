@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 26,
   "boxShadow": "none",
-  "defaultText": "{{ mainFunctions.removeChar( assistitiHospice_tbl.selectedRow[\"Comune\"], \"_\")}}",
+  "defaultText": "{{ mainFunctions.removeChar( assistitiHospice_tbl.selectedRow[\"StrutturaErogatrice\"], \"_\")}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
