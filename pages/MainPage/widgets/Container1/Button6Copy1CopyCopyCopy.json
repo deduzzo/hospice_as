@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "0px",
-  "bottomRow": 47,
+  "bottomRow": 48,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -48,7 +48,7 @@
   "rightColumn": 39,
   "text": "🔎",
   "tooltip": "Seleziona ICD9..",
-  "topRow": 43,
+  "topRow": 44,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "u4qwcfrslr",
