@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 9,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( assistitiHospice_tbl.selectedRow[\"TipoCUNI\"] ?? 0))(tipoCuni_cmb.options, tipoCuni_cmb.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -45,7 +45,7 @@
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "value",
-  "originalBottomRow": 10,
+  "originalBottomRow": 9,
   "originalTopRow": 4,
   "parentColumnSpace": 18.98828125,
   "parentId": "vl0phq9jwq",

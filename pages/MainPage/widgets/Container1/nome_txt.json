@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 9,
   "boxShadow": "none",
   "defaultText": "{{assistitiHospice_tbl.selectedRow[\"Nome\"]}}",
   "dynamicBindingPathList": [

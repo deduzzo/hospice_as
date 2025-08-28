@@ -62,7 +62,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 5,
+  "rightColumn": 6,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "tooltip": "Segno/sintomo\nclinico primario\n- SSP1",
