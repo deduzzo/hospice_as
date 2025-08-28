@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 49,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -27,23 +27,23 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 49,
-  "originalTopRow": 45,
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
   "overflow": "NONE",
   "parentColumnSpace": 18.024169921875,
-  "parentId": "vl0phq9jwq",
+  "parentId": "1kuujsrq0l",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 6,
+  "rightColumn": 16,
   "shouldTruncate": false,
-  "text": "Dimissioni",
+  "text": "Filtro",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 45,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "gmgq0t59er",
-  "widgetName": "Text1CopyCopyCopy"
+  "widgetId": "2zvh07oiad",
+  "widgetName": "Text1Copy1"
 }

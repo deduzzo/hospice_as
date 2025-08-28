@@ -3,7 +3,7 @@
   "alignWidget": "LEFT",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 40,
+  "bottomRow": 41,
   "defaultCheckedState": "{{assistitiHospice_tbl.selectedRow[\"Macroprestazioni6\"]}}",
   "dynamicBindingPathList": [
     {
@@ -47,7 +47,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 59,
-  "topRow": 36,
+  "topRow": 37,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
   "widgetId": "mvug22dp2j",

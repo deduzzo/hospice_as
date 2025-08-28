@@ -28,6 +28,7 @@ export default {
 		tariffa_giornaliera_txt.setValue("250");
 		cittadinanza_txt.setValue("IT");
 		statoestero_txt.setValue("IT");
+		tipoCuni_cmb.setSelectedOption(0);
 	},
 	verificaOAggiungiRiga: async () => {
 		if (!this.verificaCampiObbligatori()) {
@@ -48,7 +49,7 @@ export default {
 			"ID": newID ?? assistitiHospice_tbl.selectedRow["ID"],
 			"Cognome": cognome_txt.text,
 			"Nome": nome_txt.text,
-			"Trasmissione": "I",
+			"TipoCUNI": tipoCuni_cmb.selectedOptionValue,
 			"CodiceUnivoco": cf_txt.text,
 			"AnnoNascita": annoNascita_txt.text,
 			"Genere": genere_cmb.selectedOptionValue,
@@ -60,7 +61,6 @@ export default {
 			"StatoEstero": statoestero_txt.text,
 			"StrutturaErogatrice": struttura_erog_txt.text,
 			"DataRicovero": moment(data_ricovero.selectedDate).format("YYYY-MM-DD"),
-			"TrasmissioneT2": "I",
 			"TariffaGiornaliera": tariffa_giornaliera_txt.text,
 			"TipoStrutturaProvenienza": tipoStrutturaProv_cmb.selectedOptionValue,
 			"DataRichiestaRicovero": moment(data_richiesta_ricovero_cmb.selectedDate).format("YYYY-MM-DD"),
@@ -112,6 +112,7 @@ export default {
 		return cf_txt.text == "" || !cf_txt.isValid ||
 			cognome_txt.text == "" ||
 			nome_txt.text == "" || 
+			!tipoCuni_cmb.isValid || 
 			annoNascita_txt.text == "" || !annoNascita_txt.isValid ||
 			!genere_cmb.isValid ||
 			cittadinanza_txt.text == "" || !cittadinanza_txt.isValid ||
@@ -179,7 +180,7 @@ export default {
 							DatiAnagrafici: {
 								CUNI: riga['CodiceUnivoco'],
 								validitaCI: "0",
-								tipologiaCI: "0",
+								tipologiaCI: riga['tipoCUNI'],
 								AnnoNascita: riga["AnnoNascita"],
 								Genere: riga['Genere'],
 								Cittadinanza: riga['Cittadinanza'],

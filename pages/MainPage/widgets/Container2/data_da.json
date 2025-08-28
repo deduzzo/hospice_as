@@ -2,58 +2,65 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 18,
   "boxShadow": "none",
-  "defaultOptionValue": "ultimo_anno",
+  "closeOnSelection": true,
+  "dateFormat": "DD/MM/YYYY",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{mainFunctions.dataRange.from}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "sourceData"
+      "key": "defaultDate"
     }
   ],
   "dynamicTriggerPathList": [],
+  "firstDayOfWeek": 0,
   "isDisabled": false,
-  "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "2a759mj2tp",
+  "key": "3vrdw7c815",
+  "label": "Da",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Periodo",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 2,
+  "leftColumn": 0,
+  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 15,
-  "mobileLeftColumn": 2,
-  "mobileRightColumn": 22,
+  "mobileLeftColumn": 15,
+  "mobileRightColumn": 35,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "originalBottomRow": 18,
+  "originalTopRow": 11,
   "parentColumnSpace": 20.25,
-  "parentId": "0",
+  "parentId": "1kuujsrq0l",
   "parentRowSpace": 10,
-  "placeholderText": "Periodo",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 15,
-  "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Ultimo Anno\",\n    \"code\": \"ultimo_anno\"\n  },\n  {\n    \"name\": \"Ultimo Trimestre\",\n    \"code\": \"ultimo_trimestre\"\n  },\n  {\n    \"name\": \"Altro\",\n    \"code\": \"altro\"\n  }\n]",
-  "topRow": 7,
-  "type": "SELECT_WIDGET",
-  "version": 1,
-  "widgetId": "6g86wjlx27",
-  "widgetName": "filtroElenco"
+  "rightColumn": 31,
+  "shortcuts": false,
+  "timePrecision": "minute",
+  "topRow": 11,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "w44vfj7f5k",
+  "widgetName": "data_da"
 }

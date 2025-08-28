@@ -15,6 +15,9 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "regex"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -43,13 +46,13 @@
   "isSpellCheck": false,
   "isVisible": true,
   "key": "wz695rfkdw",
-  "label": "Codice Fiscale",
+  "label": "Codice Univoco",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 1,
+  "leftColumn": 13,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -66,11 +69,11 @@
   "parentColumnSpace": 12.119140625,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
-  "regex": "^[A-Z]{6}[0-9]{2}[A-EHLMPRST][0-9]{2}[A-Z][0-9]{3}[A-Z]$",
+  "regex": "{{ tipoCuni_cmb.selectedOptionValue === 0 ? \"^[A-Z]{6}[0-9]{2}[A-EHLMPRST][0-9]{2}[A-Z][0-9]{3}[A-Z]$\" : null}}",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 12,
+  "rightColumn": 23,
   "showStepArrows": false,
   "topRow": 4,
   "type": "INPUT_WIDGET_V2",

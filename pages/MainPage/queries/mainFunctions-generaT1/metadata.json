@@ -9,7 +9,7 @@
       "jsArguments": [
         {
           "name": "filename",
-          "value": "{{mainFunctions.regione + mainFunctions.asp + \"_\" + mainFunctions.struttura + \"_\" + annoCmb.selectedOptionValue.toString() + \"_0\" + trimestreCmb.selectedOptionLabel.substr(0,1) + \"_PIC_al_\" + \n\t\t\t\t\t moment().format(\"YYYY_MM_DD\")}}"
+          "value": "{{mainFunctions.regione + mainFunctions.asp + \"_\" + mainFunctions.struttura + \"_\" + annoCmb.selectedOptionValue.toString() + \"_0\" + trimestreCmb.selectedOptionLabel.substr(0,1) + \"_PIC_al_\" + \n\t\t\t\t\t\t\t\t\tmoment().format(\"YYYY_MM_DD\")}}"
         }
       ],
       "paginationType": "NONE",

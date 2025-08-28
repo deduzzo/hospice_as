@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 17,
   "boxShadow": "none",
   "defaultText": "{{assistitiHospice_tbl.selectedRow[\"StatoEstero\"]}}",
   "dynamicBindingPathList": [
@@ -72,7 +72,7 @@
   "rightColumn": 37,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 10,
+  "topRow": 11,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "sxz5mbr2w4",
