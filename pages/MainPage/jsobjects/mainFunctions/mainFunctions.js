@@ -16,12 +16,20 @@ export default {
 	regione: "190",
 	asp: "205",
 	struttura: "830100",
+	 wait(seconds=2) {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve();
+      }, seconds * 1000); // 2000 ms = 2 secondi
+    });
+  },
 	dataRange: {
 		from:  moment().subtract(1, 'years').format("YYYY-MM-DD"),
 		to: moment().format("YYYY-MM-DD"),
 	},
 	newRow: async () => {
 		await assistitiHospice_tbl.setSelectedRowIndex(null);
+		await this.wait(1);
 		regioneResidenza_txt.setValue("190");
 		aslResidenza_txt.setValue("205");
 		struttura_erog_txt.setValue("830100");
