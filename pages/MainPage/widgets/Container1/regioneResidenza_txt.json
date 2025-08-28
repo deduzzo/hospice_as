@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 16,
   "boxShadow": "none",
   "defaultText": "{{assistitiHospice_tbl.selectedRow[\"RegioneR\"]}}",
   "dynamicBindingPathList": [
@@ -65,7 +65,7 @@
   "rightColumn": 13,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 11,
+  "topRow": 10,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ek9b6zgz37",

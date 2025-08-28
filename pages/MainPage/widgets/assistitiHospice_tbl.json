@@ -36,7 +36,6 @@
     "ID",
     "Cognome",
     "Nome",
-    "Trasmissione",
     "CodiceUnivoco",
     "AnnoNascita",
     "Genere",
@@ -48,7 +47,6 @@
     "StatoEstero",
     "StrutturaErogatrice",
     "DataRicovero",
-    "TrasmissioneT2",
     "TariffaGiornaliera",
     "TipoStrutturaProvenienza",
     "DataRichiestaRicovero",
@@ -78,7 +76,7 @@
     "SS1",
     "TipoCUNI"
   ],
-  "columnUpdatedAt": 1756362827831,
+  "columnUpdatedAt": 1756372365910,
   "columnWidthMap": {
     "AnnoNascita": 133,
     "CodiceUnivoco": 222
@@ -114,9 +112,6 @@
       "key": "primaryColumns.Nome.computedValue"
     },
     {
-      "key": "primaryColumns.Trasmissione.computedValue"
-    },
-    {
       "key": "primaryColumns.CodiceUnivoco.computedValue"
     },
     {
@@ -148,9 +143,6 @@
     },
     {
       "key": "primaryColumns.DataRicovero.computedValue"
-    },
-    {
-      "key": "primaryColumns.TrasmissioneT2.computedValue"
     },
     {
       "key": "primaryColumns.TariffaGiornaliera.computedValue"
@@ -1630,74 +1622,6 @@
       "label": "TitoloStudio",
       "notation": "standard",
       "originalId": "TitoloStudio",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "Trasmissione": {
-      "alias": "Trasmissione",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = assistitiHospice_tbl.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"Trasmissione\"])) :  currentRow[\"Trasmissione\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "Trasmissione",
-      "index": 3,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Trasmissione",
-      "notation": "standard",
-      "originalId": "Trasmissione",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "TrasmissioneT2": {
-      "alias": "TrasmissioneT2",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = assistitiHospice_tbl.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"TrasmissioneT2\"])) :  currentRow[\"TrasmissioneT2\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "TrasmissioneT2",
-      "index": 18,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "TrasmissioneT2",
-      "notation": "standard",
-      "originalId": "TrasmissioneT2",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

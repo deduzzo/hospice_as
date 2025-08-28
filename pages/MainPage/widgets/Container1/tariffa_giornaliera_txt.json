@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 27,
+  "bottomRow": 26,
   "boxShadow": "none",
   "defaultText": "{{ assistitiHospice_tbl.selectedRow[\"TariffaGiornaliera\"]}}",
   "dynamicBindingPathList": [
@@ -65,7 +65,7 @@
   "rightColumn": 47,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 21,
+  "topRow": 20,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "6ac2bhp39u",

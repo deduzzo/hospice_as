@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 27,
+  "bottomRow": 26,
   "boxShadow": "none",
   "defaultText": "{{ mainFunctions.removeChar( assistitiHospice_tbl.selectedRow[\"StrutturaErogatrice\"], \"_\")}}",
   "dynamicBindingPathList": [
@@ -65,7 +65,7 @@
   "rightColumn": 7,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 21,
+  "topRow": 20,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "5b6huu9x1p",

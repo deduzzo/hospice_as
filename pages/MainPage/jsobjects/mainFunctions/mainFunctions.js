@@ -16,6 +16,7 @@ export default {
 	regione: "190",
 	asp: "205",
 	struttura: "830100",
+	patologieMap: {},
 	 wait(seconds=2) {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -149,12 +150,20 @@ export default {
 		try {
 			await this.getDistrettiMap();          // 1
 			await this.verifyTokenExpires();       // 2
-			await this.aggiornaDatiAssistiti();
+			await this.aggiornaDatiAssistiti();    // 3
+			await this.aggiornaPatologie();
 		} catch (err) {
 			console.error("Errore in initLoad:", err);
 			showAlert("Si è verificato un errore nel caricamento iniziale", "error");
 		} finally {
 			this.firstLoadingOk = true;
+		}
+	},
+	async aggiornaPatologie() {
+		this.patologieMap = {};
+		await getPatologie.run();
+		for (let patologia of getPatologie.data) {
+			this.patologieMap[patologia.codice] = patologia.descrizione;
 		}
 	},
 	async aggiornaDatiAssistiti () {
@@ -476,5 +485,22 @@ export default {
 			storeValue("selectedIcd9", null);
 			closeModal(icd9_mdl.name);
 		}
+	},
+	showIcd9PatologieModal () {
+		icd9_patologie_cmb.setSelectedOption(-1);
+		showModal(icd9_patologie_mdl.name);
+	},
+	setIcd9Patologia() {
+		patologia_resp_txt.setValue(icd9_patologie_cmb.selectedOptionValue);
+		this.verificaPatologiaTxt();
+		closeModal(icd9_patologie_mdl.name);
+	},
+	verificaPatologiaTxt () {
+		if (this.patologieMap.hasOwnProperty(parseInt(patologia_resp_txt.text)))
+			patologia_txt.setText(this.patologieMap[parseInt(patologia_resp_txt.text)]);
+		else if (patologia_resp_txt.text)
+			patologia_txt.setText("PATOLOGIA NON TROVATA (ALTRO)")
+		else
+			patologia_txt.setText("")
 	}
 }

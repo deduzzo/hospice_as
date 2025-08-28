@@ -44,6 +44,10 @@
         "value": "\"830100\""
       },
       {
+        "name": "patologieMap",
+        "value": "{}"
+      },
+      {
         "name": "dataRange",
         "value": "{\n  from: moment().subtract(1, 'years').format(\"YYYY-MM-DD\"),\n  to: moment().format(\"YYYY-MM-DD\")\n}"
       }

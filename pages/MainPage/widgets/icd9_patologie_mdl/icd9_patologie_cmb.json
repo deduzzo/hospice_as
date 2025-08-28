@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "defaultOptionValue": "-1",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "sourceData"
@@ -31,7 +31,7 @@
   "key": "b6pclue9g2",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "Patologie ICD9",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 1,
@@ -45,17 +45,17 @@
   "needsErrorInfo": false,
   "optionLabel": "label",
   "optionValue": "value",
-  "parentId": "dqfuh3fvis",
+  "parentId": "hu8dx21fad",
   "parentRowSpace": 10,
   "placeholderText": "Seleziona un opzione",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 57,
   "serverSideFiltering": false,
-  "sourceData": "{{getAllICD9.data.map( (obj) =>{ return  {'label': \" [\" + obj.codice.replaceAll(\"_\",\"\") + \"] \" + obj.sintomo , 'value': obj.codice } })}}",
+  "sourceData": "{{\n  Object.entries(mainFunctions.patologieMap)\n    .map(([key, val]) => ({\n      label: `[${key}] ${val}`,\n      value: key\n    }))\n}}",
   "topRow": 1,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "7e5ecbt3d7",
-  "widgetName": "ic9_select"
+  "widgetId": "qfz58si4br",
+  "widgetName": "icd9_patologie_cmb"
 }

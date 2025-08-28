@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 50,
+  "bottomRow": 51,
   "capSide": 0,
   "capType": "nc",
   "dividerColor": "#858282",
@@ -17,8 +17,8 @@
   "mobileTopRow": 12,
   "needsErrorInfo": false,
   "orientation": "vertical",
-  "originalBottomRow": 50,
-  "originalTopRow": 35,
+  "originalBottomRow": 51,
+  "originalTopRow": 36,
   "parentColumnSpace": 18.98828125,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
