@@ -78,7 +78,7 @@
     "SS1",
     "TipoCUNI"
   ],
-  "columnUpdatedAt": 1756361969280,
+  "columnUpdatedAt": 1756362827831,
   "columnWidthMap": {
     "AnnoNascita": 133,
     "CodiceUnivoco": 222
@@ -1558,7 +1558,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "TipoCUNI",
       "notation": "standard",
       "originalId": "TipoCUNI",
