@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 26,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( assistitiHospice_tbl.selectedRow['MotivoPrevalenteRicovero']))(motivo_prev_ricovero.options, motivo_prev_ricovero.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -57,7 +57,7 @@
   "rightColumn": 42,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"Clinico\",\n    \"value\": 1\n  },\n\t{\n    \"name\": \"NON Clinico\",\n    \"value\": 2\n  }\n]",
-  "topRow": 19,
+  "topRow": 20,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "9inac55686",
