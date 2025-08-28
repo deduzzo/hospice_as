@@ -355,8 +355,8 @@ export default {
 		return upperText;
 	},
 	aggiornaDatiAssistito : () => {
-		//genere_cmb.setSelectedOption(assistitiHospice_tbl.selectedRow['Genere']);
-		//console.log(assistitiHospice_tbl.selectedRow['Genere']);
+		this.wait(1);
+		this.verificaPatologiaTxt();
 	},
 	unixToDate : (unixDate) => {
 		const date = moment(unixDate);
