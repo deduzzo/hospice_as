@@ -127,7 +127,7 @@ export default {
 			data_ricovero.selectedDate == "" ||
 			!motivo_prev_ricovero.isValid ||
 			tariffa_giornaliera_txt.text == "" || !tariffa_giornaliera_txt.isValid
-			!tipoStrutturaProv_cmb.isValid ||
+		!tipoStrutturaProv_cmb.isValid ||
 			patologia_resp_txt.text == "" || !patologia_resp_txt.isValid ||
 			ss1_txt.text == "" || !ss1_txt.isValid ||
 			ssp1_txt.text == "" || !ssp1_txt.isValid ||
@@ -430,5 +430,43 @@ export default {
 			from: anno+trim[trimestre-1].split("|")[0],
 			to: anno + trim[trimestre-1].split("|")[1]
 		};	
+	},
+	showIcd9Modal(component) {
+		storeValue("selectedIcd9", component);
+		ic9_select.setSelectedOption(-1)
+		showModal(icd9_mdl.name);
+	},
+	setIcd9Text() {
+		if (appsmith.store.selectedIcd9) {
+			const value = ic9_select.selectedOptionValue.replace("_","");
+			switch (appsmith.store.selectedIcd9) {
+				case "SS1":
+					ss1_txt.setValue(value);
+					break;
+				case "SS2":
+					ss2_txt.setValue(value);
+					break;
+				case "MNC1":
+					mnc1_txt.setValue(value);
+					break;
+				case "MNC2":
+					mnc2_txt.setValue(value);
+					break;
+				case "SSP1":
+					ssp1_txt.setValue(value);
+					break;
+				case "SSP2":
+					ssp2_txt.setValue(value);
+					break;
+				case "SSS1":
+					sss1_txt.setValue(value);
+					break;
+				case "SSS2":
+					sss2_txt.setValue(value);
+					break;
+			}
+			storeValue("selectedIcd9", null);
+			closeModal(icd9_mdl.name);
+		}
 	}
 }

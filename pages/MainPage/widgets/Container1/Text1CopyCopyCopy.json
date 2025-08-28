@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 49,
+  "bottomRow": 57,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -27,20 +27,20 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 49,
-  "originalTopRow": 45,
+  "originalBottomRow": 57,
+  "originalTopRow": 53,
   "overflow": "NONE",
   "parentColumnSpace": 18.024169921875,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 6,
+  "rightColumn": 8,
   "shouldTruncate": false,
   "text": "Dimissioni",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 45,
+  "topRow": 53,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
