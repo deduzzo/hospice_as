@@ -58,7 +58,7 @@
   "parentColumnSpace": 12.119140625,
   "parentId": "vl0phq9jwq",
   "parentRowSpace": 10,
-  "regex": "^(?:\\d{1,6}|\\d{1,5}\\.\\d{1,5}|XXXXXX)$",
+  "regex": "^(?:\\d{1,6}|\\d{1,5}\\.\\d{1,5}|[A-Za-z]\\d{1,5}(?:\\.\\d{1,5})?|XXXXXX)$\n",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",

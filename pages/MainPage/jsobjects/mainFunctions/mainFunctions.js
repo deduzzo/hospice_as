@@ -135,13 +135,18 @@ export default {
 			data_ric_ric_cmb.selectedDate == "" ||
 			data_ricovero.selectedDate == "" ||
 			!motivo_prev_ricovero.isValid ||
-			tariffa_giornaliera_txt.text == "" || !tariffa_giornaliera_txt.isValid
+			tariffa_giornaliera_txt.text == "" || !tariffa_giornaliera_txt.isValid ||
 		!tipoStrutturaProv_cmb.isValid ||
-			patologia_resp_txt.text == "" || !patologia_resp_txt.isValid ||
+			patologia_resp_txt.text == "" || patologia_resp_txt.text == null || !patologia_resp_txt.isValid ||
 			ss1_txt.text == "" || !ss1_txt.isValid ||
+			!ss2_txt.isValid ||
+			!mnc1_txt.isValid ||
+			!mnc2_txt.isValid ||
 			ssp1_txt.text == "" || !ssp1_txt.isValid ||
 			ssp2_txt.text == "" || !ssp2_txt.isValid ||
-			(!mp1_ch.isChecked && !mp2_ch.isChecked && !mp3_ch.isChecked && !mp4_ch.isChecked && !mp5_ch.isChecked && !mp6_ch.isChecked && !mp7_ch.isChecked && !mp8_ch.isChecked && !mp9_ch.isChecked ) ||
+			!sss1_txt.isValid || 
+			!sss2_txt.isValid ||
+			(!mp1_ch.isChecked && !mp2_ch.isChecked && !mp3_ch.isChecked && !mp4_ch.isChecked && !mp5_ch.isChecked && !mp6_ch.isChecked && !mp7_ch.isChecked && !mp8_ch.isChecked && !mp9_ch.isChecked && !mp10_ch.isChecked ) ||
 			data_dimissioni.selectedDate == "" || 
 			!tipologia_dimissioni_cmb.isValid;
 	},
