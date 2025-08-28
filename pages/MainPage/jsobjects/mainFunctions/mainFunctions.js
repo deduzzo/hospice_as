@@ -362,6 +362,7 @@ export default {
 	aggiornaDatiAssistito : () => {
 		this.wait(1);
 		this.verificaPatologiaTxt();
+		
 	},
 	unixToDate : (unixDate) => {
 		const date = moment(unixDate);

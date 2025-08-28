@@ -15,6 +15,9 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -28,6 +31,7 @@
       "key": "onTextChanged"
     }
   ],
+  "errorMessage": "Inserire un valore valido",
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -67,6 +71,7 @@
   "showStepArrows": false,
   "topRow": 30,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{patologia_resp_txt.text && patologia_resp_txt.text  !== \"\"}}",
   "version": 2,
   "widgetId": "554sj4c5w2",
   "widgetName": "patologia_resp_txt"
